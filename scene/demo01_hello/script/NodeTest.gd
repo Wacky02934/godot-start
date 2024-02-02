@@ -8,6 +8,9 @@ func _ready():
 
 
 func _process(delta):
+	handle_movement(delta)
+
+func handle_movement(delta):
 	var velocity = Vector2.ZERO # The player's movement vector.
 	if Input.is_action_pressed("move_right"):
 		velocity.x += 1
@@ -23,12 +26,6 @@ func _process(delta):
 	
 	velocity = velocity.normalized() * speed
 	position += velocity * delta
-	#$NodeChild.position = Vector2.ZERO
-	#get_parent().position = Vector2.ZERO
-	#self.call_deferred("myCall")
-	#self.call_deferred_thread_group("myCall")
-	pass
-
 
 func myCall():
 	print("my call")

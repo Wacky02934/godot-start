@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="godot-start"
+run/main_scene="res://scene/demo01_hello/HelloWorld.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="godot-start"
 
 [input]
 

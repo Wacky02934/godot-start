@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dip07sfdhauy3"]
+[gd_scene load_steps=4 format=3 uid="uid://dip07sfdhauy3"]
 
 [ext_resource type="Script" path="res://scene/demo01_hello/script/HelloWorld.gd" id="1_2stq7"]
 [ext_resource type="Script" path="res://scene/demo01_hello/Label2.gd" id="2_5nv55"]
+[ext_resource type="Script" path="res://scene/demo01_hello/Button.gd" id="2_qkyey"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_2stq7")
@@ -26,5 +27,4 @@ offset_left = 298.0
 offset_top = 402.0
 offset_right = 379.0
 offset_bottom = 439.0
-
-[connection signal="pressed" from="Button" to="Label2" method="_on_button_pressed"]
+script = ExtResource("2_qkyey")
